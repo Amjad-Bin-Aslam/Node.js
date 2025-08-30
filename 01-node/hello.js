@@ -1,10 +1,12 @@
-const add = require("./math");
-const math = require("./math")
+const math = require("./math");
+
+
 
 
 console.log("Hey there! I am node JS")
 
 
 
-console.log(math("The value is:" , 2 , 3));
+console.log(math.addFn(6 , 3))
+console.log(math.subFn(6 , 3))
 
