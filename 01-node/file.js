@@ -1,6 +1,9 @@
 // const { time } = require('console');
 const fs = require('fs');
 
+const os = require("os")
+
+// console.log(os.cpus().length)
 
 // const result = fs.readFileSync("./contacts.txt" , 'utf-8')
 
@@ -50,6 +53,8 @@ const fs = require('fs');
 // console.log("3")
 
 
+
+//Non-Blocking
 console.log("1")
 
 fs.readFile("./contacts.txt" , "utf-8" , (err , result) => {
