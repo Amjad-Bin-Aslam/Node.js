@@ -8,7 +8,8 @@ function sub(a , b){
 }
 
 
-module.exports = {
-    addFn: add,
-    subFn: sub
-}
+// module.exports = {
+//     addFn: add,
+//     subFn: sub
+// }
+
