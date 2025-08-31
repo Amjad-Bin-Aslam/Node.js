@@ -31,9 +31,31 @@ const fs = require('fs');
 
 // fs.statSync("./test.txt")
 
-// sync...
-fs.writeFileSync("./test.txt" , 'Hey there')
+// sync...Blocking 
+// fs.writeFileSync("./test.txt" , 'Hey there')
 
-// async 
-fs.writeFile("./test.txt" , "Hey There async" , (err) => {})
+// // async...Non-blocking
+// fs.writeFile("./test.txt" , "Hey There async" , (err) => {}) 
 
+
+
+    // Blocking code...
+
+// console.log("1");
+
+// const result = fs.readFileSync("./contacts.txt" , "utf-8")
+// console.log(result)
+
+// console.log("2")
+// console.log("3")
+
+
+console.log("1")
+
+fs.readFile("./contacts.txt" , "utf-8" , (err , result) => {
+    console.log(result)
+})
+
+console.log("2")
+console.log("3")
+console.log("4")
